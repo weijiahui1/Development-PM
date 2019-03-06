@@ -11,16 +11,15 @@
     7）与master分支合并后，立刻部署
 ### 2.使用Github Flow 的前提条件：
 1）团队规模最好控制在15-20人之内，具体见 how-github-works
-
 2）部署作业完全自动化。必须自动化，一天之类需要多次部署
-*使用部署工具（Capistrano，Mina，Fabric,Webistrano,Strano等），让部署时所需的一系列流程自动化。
-*通过Web界面进行部署，Capistrano 等部署工具需要命令执行操作，开发者以外的人很难实施部署
-    *Capistrano http://github.com/capistrano/capistrano //Ruby开发的代表性部署工具
-    *Webistrano http://kentaro/webistrano //可以通过Web执行Capistrano的工具
-导入开发时注意事项：随着团队人数的增多及成熟度的提高，开发速度会越来越快。
-往往一个部署尚未完成，另一名开发者就已经处理完下一个pull request，开始实施下一个部署。
-在这种情况下，一旦正式环境出现问题，很难分辨哪个部署造成了影响。为了应对该情况，建议在部署实施过程中通过工具加锁。
-Git Hook 自动部署
+*使用部署工具（Capistrano，Mina，Fabric,Webistrano,Strano等），让部署时所需的一系列流程自动化。<br/>
+*通过Web界面进行部署，Capistrano 等部署工具需要命令执行操作，开发者以外的人很难实施部署<br/>
+    *Capistrano http://github.com/capistrano/capistrano //Ruby开发的代表性部署工具<br/>
+    *Webistrano http://kentaro/webistrano //可以通过Web执行Capistrano的工具<br/>
+*导入开发时注意事项：随着团队人数的增多及成熟度的提高，开发速度会越来越快。<br/>
+*往往一个部署尚未完成，另一名开发者就已经处理完下一个pull request，开始实施下一个部署。
+在这种情况下，一旦正式环境出现问题，很难分辨哪个部署造成了影响。为了应对该情况，建议在部署实施过程中通过工具加锁。<br/>
+*Git Hook 自动部署
 
 3）重视测试
 *让测试自动化
