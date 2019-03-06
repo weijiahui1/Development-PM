@@ -25,3 +25,24 @@
         让测试自动化
         编写测试代码，通过全部测试
         维护测试代码
+# 二、Git Flow
+### 1.Git Flow流程常用分支
+* master
+* develop
+* feature
+* release
+* hotfix
+### 2.Git Flow分支命名规范
+    master（主分支，永远是可用的稳定版本，不能直接在该分支上开发）
+    develop（开发主分支，所有新功能以这个分支来创建自己的开发分支，该分支只做只合并操作，不能直接在该分支上开发）
+    feature-xxx（功能开发分支，在develop上创建分支，以自己开发功能模块命名，功能测试正常后合并到develop分支）
+    feature-xxx-fix(功能bug修复分支，feature分支合并之后发现bug，在develop上创建分支修复，之后合并回develop分支。PS:feature分支在申请合并之后，未合并之前还是可以提交代码的，所以feature在合并之前还可以在原分支上继续修复bug)
+    hotfix-xxx（紧急bug修改分支，在master分支上创建，修复完成后合并到 master）
+### 3.Git Flow提交记录规范
+    每个 git commit 记录都需要按照固定格式，具体格式为：
+    第一行：作者: 功能模块名称（或 功能模块ID）
+    第二行：提交描述，中英文皆可
+      + ：增加代码
+      *  ：修改代码
+      -  ： 删除代码
+
